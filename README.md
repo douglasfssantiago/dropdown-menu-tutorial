@@ -5,7 +5,7 @@ expands and collapses upon clicking, using `HTML`, `CSS`, and `JavaScript`.
 
 ![](./assets/img/readme1.png)
 
-## Project Demo
+## 🖱️Project Demo
 
 You can see the live demo of the project [here](https://douglasfssantiago.github.io/dropdown-menu-tutorial/).
 
@@ -20,20 +20,20 @@ You can see the live demo of the project [here](https://douglasfssantiago.github
   - [Step 3: JavaScript Logic](#step-3-javascript-logic)
 - [Contributing](#contributing)
 
-## Introduction
+## ✒️Introduction
 
 This tutorial will guide you through the process of creating a simple dropdown 
 menu. The dropdown menu will expand when the button is clicked and collapse 
 when clicking outside the menu or clicking the button again.
 
-## Requirements
+## 🖥️Requirements
 
 To follow this tutorial, you'll need:
 - Basic knowledge of HTML, CSS, and JavaScript.
 - A code editor like Visual Studio Code.
 - A web browser to test your application.
 
-## Usage
+## 🔗Usage
 
 Clone the repository and open the `index.html` file in your web browser to see 
 the dropdown menu in action.
@@ -42,16 +42,64 @@ the dropdown menu in action.
 git clone https://github.com/douglasfssantiago/dropdown-menu-tutorial.git
 cd dropdown-menu-tutorial
 ```
-## Step-by-Step Guide
+## 💡Step-by-Step Guide
 
 #### Step 1: HTML Structure
 - Create an index.html file with the necessary elements for the dropdown menu.
-
+```HTML
+    <body>
+        <div class="dropdown">
+            <button class="dropdown-btn">Dropdown Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </body>
+```
 #### Step 2: CSS Styling
 - CSS Styling: Define styles in styles.css to format the dropdown menu and its elements.
+```CSS
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(24, 23, 23);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #119917;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.dropdown-btn:hover{
+    background-color: #15c741;
+}
+```
 
 #### Step 3: JavaScript Logic
 - JavaScript Logic: Implement script.js to handle the click events and toggle the dropdown visibility.
+```javascript
+const dropdownBtn = document.querySelector('.dropdown-btn');
+const dropdownContent = document.querySelector('.dropdown-content');
 
-## Contributing
+dropdownBtn.addEventListener('click', function() {
+    dropdownContent.classList.toggle('show');
+});
+```
+
+## 👍Contributing
 - Created by Douglas F. S. Santiago

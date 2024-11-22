@@ -9,7 +9,7 @@ expands and collapses upon clicking, using `HTML`, `CSS`, and `JavaScript`.
 
 You can see the live demo of the project [here](https://douglasfssantiago.github.io/dropdown-menu-tutorial/).
 
-## Table of Contents
+## 📑Table of Contents
 
 - [Introduction](#introduction)
 - [Requirements](#requirements)
